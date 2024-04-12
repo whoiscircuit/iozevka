@@ -40,7 +40,7 @@ for font in ./out/ttf/IoZevkaNerd/*.ttf; do
 done
 
 # archive fonts in a zip file
-zip -r out/ttf.zip out/ttf/*
-zip -r out/woff2.zip out/woff2/*
+rm -rf out/ttf.zip && zip -r out/ttf.zip out/ttf/*
+rm -rf out/ttf.zip && zip -r out/woff2.zip out/woff2/*
 
 echo "done."
