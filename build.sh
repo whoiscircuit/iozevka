@@ -15,6 +15,7 @@ VARIATIONS=(IoZevkaCode IoZevkaQuasi IoZevkaSlabs IoZevkaTerm IoZevkaFixed IoZev
 for variation in ${VARIATIONS[@]}; do
     (cd Iosevka && npm run build "contents::${variation}")
 done
+(cd Iosevka && npm run build "ttf::IoZevkaNerd")
 
 # extract fonts from the dist folder into the out folder
 mkdir -p ./out/ttf
@@ -34,8 +35,8 @@ fi
 
 # patch nerd fonts for ioZevkaTerm
 mkdir out/ttf/IoZevkaNerd -p
-for font in ./out/ttf/IoZevkaTerm/*.ttf; do
-    ./FontPatcher/font-patcher $font --outputdir ./out/ttf/IoZevkaNerd
+for font in ./out/ttf/IoZevkaNerd/*.ttf; do
+    ./FontPatcher/font-patcher $font --outputdir ./out/ttf/IoZevkaNerd --makegroups=-1
 done
 
 # archive fonts in a zip file

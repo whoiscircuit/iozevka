@@ -258,6 +258,70 @@ shape = 800
 menu = 800
 css = 800
 
+
+[buildPlans.IoZevkaNerd]
+family = "ioZevka Term"
+spacing = "term"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = true
+
+  [buildPlans.IoZevkaNerd.variants]
+  inherits = "ss14"
+
+  [buildPlans.IoZevkaNerd.ligations]
+  inherits = "dlig"
+
+[buildPlans.IoZevkaNerd.widths.Condensed]
+shape = 500
+menu = 3
+css = "condensed"
+
+[buildPlans.IoZevkaNerd.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
+
+[buildPlans.IoZevkaNerd.widths.UltraCondensed]
+shape = 416
+menu = 1
+css = "ultra-condensed"
+
+[buildPlans.IoZevkaNerd.widths.Extended]
+shape = 720
+menu = 7
+css = "expanded"
+
+[buildPlans.IoZevkaNerd.weights.ExtraLight]
+shape = 200
+menu = 200
+css = 200
+
+[buildPlans.IoZevkaNerd.weights.Light]
+shape = 300
+menu = 300
+css = 300
+
+[buildPlans.IoZevkaNerd.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.IoZevkaNerd.weights.Medium]
+shape = 500
+menu = 500
+css = 500
+
+[buildPlans.IoZevkaNerd.weights.Bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.IoZevkaNerd.weights.ExtraBold]
+shape = 800
+menu = 800
+css = 800
+
 [buildPlans.IoZevkaFixed]
 family = "ioZevka Fixed"
 spacing = "fixed"
