@@ -12,7 +12,7 @@ cp ./private-build-plans.toml ./Iosevka/
 
 # build all six variations of iozevka
 VARIATIONS=(IoZevkaCode IoZevkaQuasi IoZevkaSlabs IoZevkaTerm IoZevkaFixed IoZevkaMono)
-for variation in $VARIATIONS; do
+for variation in ${VARIATIONS[@]}; do
     (cd Iosevka && npm run build "contents::${variation}")
 done
 
