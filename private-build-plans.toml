@@ -1,0 +1,383 @@
+[buildPlans.IoZevkaCode]
+family = "ioZevka Code"
+spacing = "normal"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = true
+
+  [buildPlans.IoZevkaCode.variants]
+  inherits = "ss14"
+
+[buildPlans.IoZevkaCode.widths.Condensed]
+shape = 500
+menu = 3
+css = "condensed"
+
+[buildPlans.IoZevkaCode.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
+
+[buildPlans.IoZevkaCode.widths.UltraCondensed]
+shape = 416
+menu = 1
+css = "ultra-condensed"
+
+[buildPlans.IoZevkaCode.widths.ExtraCondensed]
+shape = 456
+menu = 2
+css = "extra-condensed"
+
+[buildPlans.IoZevkaCode.widths.SemiCondensed]
+shape = 548
+menu = 4
+css = "semi-condensed"
+
+[buildPlans.IoZevkaCode.widths.SemiExtended]
+shape = 658
+menu = 6
+css = "semi-expanded"
+
+[buildPlans.IoZevkaCode.widths.Extended]
+shape = 720
+menu = 7
+css = "expanded"
+
+[buildPlans.IoZevkaCode.weights.ExtraLight]
+shape = 200
+menu = 200
+css = 200
+
+[buildPlans.IoZevkaCode.weights.Light]
+shape = 300
+menu = 300
+css = 300
+
+[buildPlans.IoZevkaCode.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.IoZevkaCode.weights.Medium]
+shape = 500
+menu = 500
+css = 500
+
+[buildPlans.IoZevkaCode.weights.Bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.IoZevkaCode.weights.ExtraBold]
+shape = 800
+menu = 800
+css = 800
+
+[buildPlans.IoZevkaQuasi]
+family = "ioZevka Quasi"
+spacing = "quasi-proportional"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = true
+noLigation = true
+
+  [buildPlans.IoZevkaQuasi.variants]
+  inherits = "ss14"
+
+[buildPlans.IoZevkaQuasi.widths.Condensed]
+shape = 500
+menu = 3
+css = "condensed"
+
+[buildPlans.IoZevkaQuasi.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
+
+[buildPlans.IoZevkaQuasi.widths.UltraCondensed]
+shape = 416
+menu = 1
+css = "ultra-condensed"
+
+[buildPlans.IoZevkaQuasi.widths.Extended]
+shape = 720
+menu = 7
+css = "expanded"
+
+[buildPlans.IoZevkaQuasi.weights.ExtraLight]
+shape = 200
+menu = 200
+css = 200
+
+[buildPlans.IoZevkaQuasi.weights.Light]
+shape = 300
+menu = 300
+css = 300
+
+[buildPlans.IoZevkaQuasi.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.IoZevkaQuasi.weights.Medium]
+shape = 500
+menu = 500
+css = 500
+
+[buildPlans.IoZevkaQuasi.weights.Bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.IoZevkaQuasi.weights.ExtraBold]
+shape = 800
+menu = 800
+css = 800
+
+[buildPlans.IoZevkaSlabs]
+family = "ioZevka Slabs"
+spacing = "quasi-proportional"
+serifs = "slab"
+noCvSs = true
+exportGlyphNames = true
+noLigation = true
+
+  [buildPlans.IoZevkaSlabs.variants]
+  inherits = "ss14"
+
+[buildPlans.IoZevkaSlabs.widths.Condensed]
+shape = 500
+menu = 3
+css = "condensed"
+
+[buildPlans.IoZevkaSlabs.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
+
+[buildPlans.IoZevkaSlabs.widths.UltraCondensed]
+shape = 416
+menu = 1
+css = "ultra-condensed"
+
+[buildPlans.IoZevkaSlabs.widths.Extended]
+shape = 720
+menu = 7
+css = "expanded"
+
+[buildPlans.IoZevkaSlabs.weights.ExtraLight]
+shape = 200
+menu = 200
+css = 200
+
+[buildPlans.IoZevkaSlabs.weights.Light]
+shape = 300
+menu = 300
+css = 300
+
+[buildPlans.IoZevkaSlabs.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.IoZevkaSlabs.weights.Medium]
+shape = 500
+menu = 500
+css = 500
+
+[buildPlans.IoZevkaSlabs.weights.Bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.IoZevkaSlabs.weights.ExtraBold]
+shape = 800
+menu = 800
+css = 800
+
+[buildPlans.IoZevkaTerm]
+family = "ioZevka Term"
+spacing = "term"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = true
+
+  [buildPlans.IoZevkaTerm.variants]
+  inherits = "ss14"
+
+  [buildPlans.IoZevkaTerm.ligations]
+  inherits = "dlig"
+
+[buildPlans.IoZevkaTerm.widths.Condensed]
+shape = 500
+menu = 3
+css = "condensed"
+
+[buildPlans.IoZevkaTerm.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
+
+[buildPlans.IoZevkaTerm.widths.UltraCondensed]
+shape = 416
+menu = 1
+css = "ultra-condensed"
+
+[buildPlans.IoZevkaTerm.widths.Extended]
+shape = 720
+menu = 7
+css = "expanded"
+
+[buildPlans.IoZevkaTerm.weights.ExtraLight]
+shape = 200
+menu = 200
+css = 200
+
+[buildPlans.IoZevkaTerm.weights.Light]
+shape = 300
+menu = 300
+css = 300
+
+[buildPlans.IoZevkaTerm.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.IoZevkaTerm.weights.Medium]
+shape = 500
+menu = 500
+css = 500
+
+[buildPlans.IoZevkaTerm.weights.Bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.IoZevkaTerm.weights.ExtraBold]
+shape = 800
+menu = 800
+css = 800
+
+[buildPlans.IoZevkaFixed]
+family = "ioZevka Fixed"
+spacing = "fixed"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = true
+noLigation = true
+
+  [buildPlans.IoZevkaFixed.variants]
+  inherits = "ss14"
+
+[buildPlans.IoZevkaFixed.widths.Condensed]
+shape = 500
+menu = 3
+css = "condensed"
+
+[buildPlans.IoZevkaFixed.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
+
+[buildPlans.IoZevkaFixed.widths.UltraCondensed]
+shape = 416
+menu = 1
+css = "ultra-condensed"
+
+[buildPlans.IoZevkaFixed.widths.Extended]
+shape = 720
+menu = 7
+css = "expanded"
+
+[buildPlans.IoZevkaFixed.weights.ExtraLight]
+shape = 200
+menu = 200
+css = 200
+
+[buildPlans.IoZevkaFixed.weights.Light]
+shape = 300
+menu = 300
+css = 300
+
+[buildPlans.IoZevkaFixed.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.IoZevkaFixed.weights.Medium]
+shape = 500
+menu = 500
+css = 500
+
+[buildPlans.IoZevkaFixed.weights.Bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.IoZevkaFixed.weights.ExtraBold]
+shape = 800
+menu = 800
+css = 800
+
+[buildPlans.IoZevkaMono]
+family = "ioZevka Mono"
+spacing = "fontconfig-mono"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = true
+
+  [buildPlans.IoZevkaMono.variants]
+  inherits = "ss14"
+
+  [buildPlans.IoZevkaMono.ligations]
+  inherits = "dlig"
+
+[buildPlans.IoZevkaMono.widths.Condensed]
+shape = 500
+menu = 3
+css = "condensed"
+
+[buildPlans.IoZevkaMono.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
+
+[buildPlans.IoZevkaMono.widths.UltraCondensed]
+shape = 416
+menu = 1
+css = "ultra-condensed"
+
+[buildPlans.IoZevkaMono.widths.Extended]
+shape = 720
+menu = 7
+css = "expanded"
+
+[buildPlans.IoZevkaMono.weights.ExtraLight]
+shape = 200
+menu = 200
+css = 200
+
+[buildPlans.IoZevkaMono.weights.Light]
+shape = 300
+menu = 300
+css = 300
+
+[buildPlans.IoZevkaMono.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.IoZevkaMono.weights.Medium]
+shape = 500
+menu = 500
+css = 500
+
+[buildPlans.IoZevkaMono.weights.Bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.IoZevkaMono.weights.ExtraBold]
+shape = 800
+menu = 800
+css = 800
