@@ -19,7 +19,7 @@ done
 # extract fonts from the dist folder into the out folder
 mkdir -p ./out/ttf
 mkdir -p ./out/woff2
-for font in $(cd ./Iosevka/dist && ls) ; do
+for font in $(cd ./Iosevka/dist && ls); do
     mkdir ./out/ttf/${font}
     mkdir ./out/woff2/${font}
     cp ./Iosevka/dist/${font}/TTF/* ./out/ttf/${font}/
@@ -29,7 +29,7 @@ done
 # download nerd font's font pacher
 if [[ ! -d ./FontPatcher ]]; then
     wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FontPatcher.zip
-    (mkdir FontPatcher && cd FontPatcher && unzip FontPatcher.zip)
+    (mkdir FontPatcher && cd FontPatcher && unzip ../FontPatcher.zip)
 fi
 
 # patch nerd fonts for ioZevkaTerm
@@ -38,7 +38,7 @@ for font in ./out/ttf/IoZevkaTerm/*.ttf; do
     ./FontPatcher/font-patcher $font --outputdir ./out/ttf/IoZevkaNerd
 done
 
-# archive fonts in a zip fille
+# archive fonts in a zip file
 zip ttf.zip out/ttf/*
 zip woff2.zip out/woff2/*
 
