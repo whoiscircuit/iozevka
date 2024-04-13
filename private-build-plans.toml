@@ -258,7 +258,6 @@ shape = 800
 menu = 800
 css = 800
 
-
 [buildPlans.IoZevkaNerd]
 family = "ioZevka Nerd"
 spacing = "term"
@@ -322,70 +321,9 @@ shape = 800
 menu = 800
 css = 800
 
-[buildPlans.IoZevkaFixed]
-family = "ioZevka Fixed"
-spacing = "fixed"
-serifs = "sans"
-noCvSs = true
-exportGlyphNames = true
-noLigation = true
-
-  [buildPlans.IoZevkaFixed.variants]
-  inherits = "ss14"
-
-[buildPlans.IoZevkaFixed.widths.Condensed]
-shape = 500
-menu = 3
-css = "condensed"
-
-[buildPlans.IoZevkaFixed.widths.Normal]
-shape = 600
-menu = 5
-css = "normal"
-
-[buildPlans.IoZevkaFixed.widths.UltraCondensed]
-shape = 416
-menu = 1
-css = "ultra-condensed"
-
-[buildPlans.IoZevkaFixed.widths.Extended]
-shape = 720
-menu = 7
-css = "expanded"
-
-[buildPlans.IoZevkaFixed.weights.ExtraLight]
-shape = 200
-menu = 200
-css = 200
-
-[buildPlans.IoZevkaFixed.weights.Light]
-shape = 300
-menu = 300
-css = 300
-
-[buildPlans.IoZevkaFixed.weights.Regular]
-shape = 400
-menu = 400
-css = 400
-
-[buildPlans.IoZevkaFixed.weights.Medium]
-shape = 500
-menu = 500
-css = 500
-
-[buildPlans.IoZevkaFixed.weights.Bold]
-shape = 700
-menu = 700
-css = 700
-
-[buildPlans.IoZevkaFixed.weights.ExtraBold]
-shape = 800
-menu = 800
-css = 800
-
 [buildPlans.IoZevkaMono]
 family = "ioZevka Mono"
-spacing = "fontconfig-mono"
+spacing = "fixed"
 serifs = "sans"
 noCvSs = true
 exportGlyphNames = true
