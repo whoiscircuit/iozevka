@@ -260,7 +260,7 @@ css = 800
 
 
 [buildPlans.IoZevkaNerd]
-family = "ioZevka Term"
+family = "ioZevka Nerd"
 spacing = "term"
 serifs = "sans"
 noCvSs = true
