@@ -20,7 +20,7 @@ done
 # extract fonts from the dist folder into the out folder
 mkdir -p ./out/ttf
 mkdir -p ./out/woff2
-for font in ${VARIATION[@]}; do
+for font in ${VARIATIONS[@]}; do
     mkdir -p ./out/ttf/${font}
     mkdir -p ./out/woff2/${font}
     cp ./Iosevka/dist/${font}/TTF/* ./out/ttf/${font}/
