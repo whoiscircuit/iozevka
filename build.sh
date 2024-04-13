@@ -20,12 +20,15 @@ done
 # extract fonts from the dist folder into the out folder
 mkdir -p ./out/ttf
 mkdir -p ./out/woff2
-for font in $(cd ./Iosevka/dist && ls); do
+for font in ${VARIATION[@]}; do
     mkdir -p ./out/ttf/${font}
     mkdir -p ./out/woff2/${font}
     cp ./Iosevka/dist/${font}/TTF/* ./out/ttf/${font}/
     cp ./Iosevka/dist/${font}/WOFF2/* ./out/woff2/${font}/
 done
+
+mkdir -p ./out/ttf/IosevkaNerd
+cp ./Iosevka/dist/IosevkaNerd/TTF/* ./out/ttf/IosevkaNerd/
 
 # download nerd font's font pacher
 if [[ ! -d ./FontPatcher ]]; then
