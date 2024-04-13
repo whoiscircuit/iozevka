@@ -39,7 +39,7 @@ fi
 # patch nerd fonts for ioZevkaTerm
 mkdir out/ttf/IoZevkaNerd -p
 for font in ./out/ttf/IoZevkaNerd/*.ttf; do
-    ./FontPatcher/font-patcher $font --outputdir ./out/ttf/IoZevkaNerd --makegroups=-1
+    ./FontPatcher/font-patcher $font --outputdir ./out/ttf/IoZevkaNerd --makegroups=-1 --complete
 done
 
 # archive fonts in a zip file
