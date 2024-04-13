@@ -27,8 +27,8 @@ for font in ${VARIATION[@]}; do
     cp ./Iosevka/dist/${font}/WOFF2/* ./out/woff2/${font}/
 done
 
-mkdir -p ./out/ttf/IosevkaNerd
-cp ./Iosevka/dist/IosevkaNerd/TTF/* ./out/ttf/IosevkaNerd/
+mkdir -p ./out/ttf/IoZevkaNerd
+cp ./Iosevka/dist/IoZevkaNerd/TTF/* ./out/ttf/IoZevkaNerd/
 
 # download nerd font's font pacher
 if [[ ! -d ./FontPatcher ]]; then
