@@ -43,7 +43,7 @@ done
 
 # archive fonts in a zip file
 rm -rf out/ttf.zip && (cd out && zip -r ttf.zip ttf/)
-rm -rf out/woff2.zip && (cd out && zip -r woff2.zip out/woff2/)
-rm -rf out/nerd.zip && (cd out && zip -r nerd.zip out/nerd/)
+rm -rf out/woff2.zip && (cd out && zip -r woff2.zip woff2/)
+rm -rf out/nerd.zip && (cd out && zip -r nerd.zip nerd/)
 
 echo "done."
