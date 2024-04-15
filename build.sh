@@ -27,8 +27,9 @@ for font in ${VARIATIONS[@]}; do
     cp ./Iosevka/dist/${font}/WOFF2/* ./out/woff2/${font}/
 done
 
+mkdir -p ./out/nerd.tmp
 mkdir -p ./out/nerd
-cp ./Iosevka/dist/IoZevkaNerd/TTF/* ./out/nerd/
+cp ./Iosevka/dist/IoZevkaNerd/TTF/* ./out/nerd.tmp/
 
 # download nerd font's font pacher
 if [[ ! -d ./FontPatcher ]]; then
@@ -37,13 +38,14 @@ if [[ ! -d ./FontPatcher ]]; then
 fi
 
 # patch nerd fonts for ioZevkaTerm
-for font in ./out/nerd/*.ttf; do
+for font in ./out/nerd.tmp/*.ttf; do
     ./FontPatcher/font-patcher $font --outputdir ./out/nerd --makegroups=-1 --complete
 done
+rm -rf ./out/nerd.tmp
 
 # archive fonts in a zip file
 rm -rf out/ttf.zip && (cd out && zip -r ttf.zip ttf/)
 rm -rf out/woff2.zip && (cd out && zip -r woff2.zip woff2/)
-rm -rf out/nerd.zip && (cd out && zip -r nerd.zip nerd/)
+# rm -rf out/nerd.zip && (cd out && zip -r nerd.zip nerd/)
 
 echo "done."
