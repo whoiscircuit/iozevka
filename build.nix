@@ -3,6 +3,7 @@
 {
   stdenv,
   fetchFromGitHub,
+  fetchzip,
   buildNpmPackage,
   ttfautohint,
   unzip,
@@ -23,6 +24,11 @@
       name = "Iosevka";
       rev = "29956e2ef7cd6e6f7ca600405c4c4968340b67c5";
       hash = "sha256-PVPr/mI13UDJfXy+vmj3DfZ1vkcE7r7YoWTeXokJz50=";
+    })
+    (fetchzip {
+      name = "FontPatcher";
+      url = "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FontPatcher.zip";
+      hash = "";
     })
   ];
   npmDepsHash = "sha256-/MWONDfq+2TqwcOJFnjLatSdGvMqcgMjJnuuAduWJ14=";
