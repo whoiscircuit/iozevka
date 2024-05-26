@@ -28,7 +28,7 @@
     (fetchzip {
       name = "FontPatcher";
       url = "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FontPatcher.zip";
-      hash = "";
+      hash = "sha256-3s0vcRiNA/pQrViYMwU2nnkLUNUcqXja/jTWO49x3BU=";
       stripRoot = false;
     })
   ];
