@@ -21,7 +21,7 @@
       owner = "be5invis";
       repo = "Iosevka";
       name = "Iosevka";
-      rev = "30.1.0";
+      rev = "29956e2ef7cd6e6f7ca600405c4c4968340b67c5";
       hash = "sha256-THs6kN5VZpTvzTK7w/sGQbxoEyyPwzl93JDOvwucgeo=";
     })
   ];
