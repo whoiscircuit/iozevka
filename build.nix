@@ -7,6 +7,7 @@
   buildNpmPackage,
   ttfautohint,
   unzip,
+  zip,
   python3,
   fontforge,
   python310Packages,
@@ -45,8 +46,8 @@
   nativeBuildInputs = [
     ttfautohint
     python3
-    unzip
-    #fontforge
     python310Packages.fontforge
+    unzip
+    zip
   ];
 })
