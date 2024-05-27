@@ -36,11 +36,11 @@
 
   installPhase = ''
     cd ../*-source
-    cp * -r ..
+    cp -r * ..
     cd ..
     source ./build.sh
     mkdir -p $out
-    cp ./out/* $out
+    cp ./out/*.zip $out
   '';
 
   nativeBuildInputs = [
