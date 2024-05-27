@@ -39,7 +39,7 @@ fi
 
 # patch nerd fonts for ioZevkaTerm
 for font in ./out/nerd.tmp/*.ttf; do
-    ./FontPatcher/font-patcher $font --outputdir ./out/nerd --makegroups=-1 --complete
+    python ./FontPatcher/font-patcher $font --outputdir ./out/nerd --makegroups=-1 --complete
 done
 rm -rf ./out/nerd.tmp
 

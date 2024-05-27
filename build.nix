@@ -10,12 +10,10 @@
   python3,
   fontforge,
   python312Packages,
-  nodejs_21,
   ...
 }:
 (buildNpmPackage rec {
   name = "iozevka";
-
   srcs = [
     ./.
     (fetchFromGitHub {
@@ -40,9 +38,15 @@
     cp * -r ..
     cd ..
     source ./build.sh
+    mkdir -p $out
+    cp ./out/* $out
   '';
 
   nativeBuildInputs = [
     ttfautohint
+    python3
+    unzip
+    #fontforge
+    python312Packages.fontforge
   ];
 })
