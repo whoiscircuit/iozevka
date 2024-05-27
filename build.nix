@@ -9,7 +9,7 @@
   unzip,
   python3,
   fontforge,
-  python312Packages,
+  python310Packages,
   ...
 }:
 (buildNpmPackage rec {
@@ -47,6 +47,6 @@
     python3
     unzip
     #fontforge
-    python312Packages.fontforge
+    python310Packages.fontforge
   ];
 })

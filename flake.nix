@@ -2,7 +2,7 @@
   description = "iozevka";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-22.11";
   };
 
   outputs = { self, nixpkgs }:
