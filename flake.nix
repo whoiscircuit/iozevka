@@ -12,6 +12,7 @@
   in {
     packages.${system} = {
       iozevka-git = import ./build.nix pkgs;
+      iozevka-nerd = import ./nerd.nix pkgs;
       iozevka = import ./default.nix pkgs;
       default = self.packages.${system}.iozevka;
     };
