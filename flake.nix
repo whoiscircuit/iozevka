@@ -9,12 +9,16 @@
   let
     system = "x86_64-linux";
     pkgs = import nixpkgs { inherit system; };
+    iozevka-git = import ./build.nix pkgs;
+    iozevka-nerd = import ./nerd.nix pkgs;
+    iozevka = import ./default.nix pkgs;
   in {
     packages.${system} = {
-      iozevka-git = import ./build.nix pkgs;
-      iozevka-nerd = import ./nerd.nix pkgs;
-      iozevka = import ./default.nix pkgs;
-      default = self.packages.${system}.iozevka;
+      inherit iozevka-git iozevka-nerd iozevka;
+      default = iozevka;
+    };
+    overlays.default = final: prev: {
+      inherit iozevka iozevka-git iozevka-nerd;
     };
   };
 }
