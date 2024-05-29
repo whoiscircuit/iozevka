@@ -63,6 +63,11 @@ shape = 500
 menu = 500
 css = 500
 
+[buildPlans.IoZevkaCode.weights.SemiBold]
+shape = 600
+menu = 600
+css = 600
+
 [buildPlans.IoZevkaCode.weights.Bold]
 shape = 700
 menu = 700
@@ -124,6 +129,11 @@ shape = 500
 menu = 500
 css = 500
 
+[buildPlans.IoZevkaQuasi.weights.SemiBold]
+shape = 600
+menu = 600
+css = 600
+
 [buildPlans.IoZevkaQuasi.weights.Bold]
 shape = 700
 menu = 700
@@ -184,6 +194,11 @@ css = 400
 shape = 500
 menu = 500
 css = 500
+
+[buildPlans.IoZevkaSlabs.weights.SemiBold]
+shape = 600
+menu = 600
+css = 600
 
 [buildPlans.IoZevkaSlabs.weights.Bold]
 shape = 700
@@ -248,6 +263,11 @@ shape = 500
 menu = 500
 css = 500
 
+[buildPlans.IoZevkaTerm.weights.SemiBold]
+shape = 600
+menu = 600
+css = 600
+
 [buildPlans.IoZevkaTerm.weights.Bold]
 shape = 700
 menu = 700
@@ -311,6 +331,11 @@ shape = 500
 menu = 500
 css = 500
 
+[buildPlans.IoZevkaNerd.weights.SemiBold]
+shape = 600
+menu = 600
+css = 600
+
 [buildPlans.IoZevkaNerd.weights.Bold]
 shape = 700
 menu = 700
@@ -373,6 +398,11 @@ css = 400
 shape = 500
 menu = 500
 css = 500
+
+[buildPlans.IoZevkaMono.weights.SemiBold]
+shape = 600
+menu = 600
+css = 600
 
 [buildPlans.IoZevkaMono.weights.Bold]
 shape = 700
