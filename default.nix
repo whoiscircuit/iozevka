@@ -3,7 +3,7 @@
 # this does not build the fonts from source for that you should use the iozevka-git derivation from build.nix
 {pkgs ? import <nixpkgs> {}, ...}: with pkgs; stdenvNoCC.mkDerivation rec {
   pname = "iozevka";
-  version = "0.0.1";
+  version = "1.1";
   propagatedUserEnvPkgs = [];
   src = fetchzip {
     url = "https://github.com/oxcl/iozevka/releases/download/stable/iozevka-ttf.zip";

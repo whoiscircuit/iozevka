@@ -14,7 +14,8 @@
   ...
 }:
 (buildNpmPackage rec {
-  name = "iozevka";
+  pname = "iozevka";
+  version = "1.1";
   srcs = [
     ./.
     (fetchFromGitHub {
