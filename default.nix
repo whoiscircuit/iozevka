@@ -6,8 +6,8 @@
   version = "1.1";
   propagatedUserEnvPkgs = [];
   src = fetchzip {
-    url = "https://github.com/oxcl/iozevka/releases/download/stable/iozevka-ttf.zip";
-    hash = "sha256-Aug+s4p5okCE+GtCfpEh3nioXcZ69oaesZTDyqeB0ig=";
+    url = "https://github.com/oxcl/iozevka/releases/download/v1.1/iozevka-ttf.zip";
+    hash = "sha256-t//CL0jBe03HgWtQxvVc26xgEHxiG/Jdr7jpX7g/KjM=";
   };
   installPhase = ''
     runHook preInstall

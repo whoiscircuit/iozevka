@@ -7,8 +7,8 @@
   version = "0.0.1";
   propagatedUserEnvPkgs = [];
   src = fetchzip {
-    url = "https://github.com/oxcl/iozevka/releases/download/stable/iozevka-nerd.zip";
-    hash = "sha256-62ynwEhQXnNPMtyhS0WJzjPURcTqiI+6n2GhRkYkcdg=";
+    url = "https://github.com/oxcl/iozevka/releases/download/v1.1/iozevka-nerd.zip";
+    hash = "sha256-kDJnygew1SM+SZXDYUPf4ql5S4ueiMyHfVzOsXeXTv8=";
   };
   installPhase = ''
     runHook preInstall
