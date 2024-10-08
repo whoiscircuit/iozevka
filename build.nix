@@ -15,15 +15,15 @@
 }:
 (buildNpmPackage rec {
   pname = "iozevka";
-  version = "1.1";
+  version = "1.2";
   srcs = [
     ./.
     (fetchFromGitHub {
       owner = "be5invis";
       repo = "Iosevka";
       name = "Iosevka";
-      rev = "29956e2ef7cd6e6f7ca600405c4c4968340b67c5";
-      hash = "sha256-PVPr/mI13UDJfXy+vmj3DfZ1vkcE7r7YoWTeXokJz50=";
+      rev = "931ea8d6c688c1d57a425050f762d0151f19d29b";
+      hash = "sha256-GGtbW4Y/02ubdufTXmywGS4jyMfm8RfOMvmUNoUcLQg=";
     })
     (fetchzip {
       name = "FontPatcher";
@@ -32,7 +32,7 @@
       stripRoot = false;
     })
   ];
-  npmDepsHash = "sha256-/MWONDfq+2TqwcOJFnjLatSdGvMqcgMjJnuuAduWJ14=";
+  npmDepsHash = "sha256-/zLWtIIPNOMrICKaj5SY1Bo3Pdso6a776fIYY/7X0U4=";
   sourceRoot = "Iosevka";
 
   installPhase = ''

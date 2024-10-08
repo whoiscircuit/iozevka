@@ -352,12 +352,10 @@ spacing = "fixed"
 serifs = "sans"
 noCvSs = true
 exportGlyphNames = true
+noLigation = true
 
   [buildPlans.IoZevkaMono.variants]
   inherits = "ss14"
-
-  [buildPlans.IoZevkaMono.ligations]
-  inherits = "dlig"
 
 [buildPlans.IoZevkaMono.widths.Condensed]
 shape = 500
