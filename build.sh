@@ -1,51 +1,78 @@
 #!/usr/bin/env bash
 set -e
 
-# clone iosevka repository
-[[ ! -d ./Iosevka ]] && git clone --depth 1 https://github.com/be5invis/Iosevka.git
+log(){
+    echo -e "\033[0;34m\033[1m[IOZEVKA]: $@\033[0m" >&2
+}
 
-# install iosevka npm dependencies
+ensure(){
+    if ! command -v $1 >/dev/null 2>&1; then
+        log "$1 is required but is not installed. please install it and try again"
+        exit 1
+    fi
+}
+ensure git
+ensure wget
+ensure zip
+ensure unzip
+ensure node
+ensure npm
+ensure python3
+ensure fontforge
+ensure ttfautohint
+
+if [[ ! -d ./Iosevka ]]; then
+  log "cloning the upstream Iosevka repository..."
+  git clone --depth 1 https://github.com/be5invis/Iosevka.git --filter "blob:none"
+fi
+
+if [[ ! -d ./FontPatcher ]]; then
+    log "downloading the Nerd Fonts FontPatcher..."
+    wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FontPatcher.zip
+    (mkdir FontPatcher && cd FontPatcher && unzip ../FontPatcher.zip)
+fi
+
+log "installing npm dependencies for Iosevka..."
 (cd Iosevka && npm install)
 
-# add my customizations to iosevka repository
+log "copy the iozevka build plans into Iosevka directory..."
 cp ./private-build-plans.toml ./Iosevka/
 
 # build all six variations of iozevka
 VARIATIONS=(IoZevkaCode IoZevkaQuasi IoZevkaSlabs IoZevkaTerm IoZevkaMono)
 for variation in ${VARIATIONS[@]}; do
+    log "building the $variation variation of iozevka..."
     (cd Iosevka && npm run build "contents::${variation}")
+    log "built $variation successfully..."
+
+    log "copying the $variation variation to out directory"
+    mkdir -p ./out/$variation/ttf
+    mkdir -p ./out/$variation/woff2
+    cp ./Iosevka/dist/${variation}/TTF/* ./out/$variation/ttf
+    cp ./Iosevka/dist/${variation}/WOFF2/* ./out/$variation/woff2
+    cp ./Iosevka/dist/${variation}/${variation}.css ./out/$variation
+    rm -rf out/$variation.zip
+    (cd out && zip -r $variation.zip $variation)
 done
+
+log "building the IoZevkaNerd variation..."
 (cd Iosevka && npm run build "ttf::IoZevkaNerd")
+log "built IoZevkaNerd successfully..."
 
-# extract fonts from the dist folder into the out folder
-mkdir -p ./out/ttf
-mkdir -p ./out/woff2
-for font in ${VARIATIONS[@]}; do
-    mkdir -p ./out/ttf/${font}
-    mkdir -p ./out/woff2/${font}
-    cp ./Iosevka/dist/${font}/TTF/* ./out/ttf/${font}/
-    cp ./Iosevka/dist/${font}/WOFF2/* ./out/woff2/${font}/
-done
-
-mkdir -p ./out/nerd.tmp
-mkdir -p ./out/nerd
+log "copying the IoZevkaNerd variation to out directory"
+mkdir -p ./out/IoZevkaNerd.tmp
+mkdir -p ./out/IoZevkaNerd/ttf
 cp ./Iosevka/dist/IoZevkaNerd/TTF/* ./out/nerd.tmp/
 
-# download nerd font's font pacher
-if [[ ! -d ./FontPatcher ]]; then
-    wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FontPatcher.zip
-    (mkdir FontPatcher && cd FontPatcher && unzip ../FontPatcher.zip)
-fi
-
 # patch nerd fonts for ioZevkaTerm
-for font in ./out/nerd.tmp/*.ttf; do
-    python ./FontPatcher/font-patcher $font --outputdir ./out/nerd --makegroups=-1 --complete
+log "patching the IoZevkaNerd variation fonts with the nerd font FontPatcher..."
+for font in ./out/IoZevkaNerd.tmp/*.ttf; do
+    python3 ./FontPatcher/font-patcher $font --outputdir ./out/IoZevkaNerd/ttf --makegroups=-1 --complete
 done
-rm -rf ./out/nerd.tmp
+log "successfully patched the IoZevkaNerd variation with the nerd font glyphs"
+rm -rf ./out/IoZevkaNerd.tmp
 
-# archive fonts in a zip file
-rm -rf out/ttf.zip && (cd out && zip -r ttf.zip ttf/)
-rm -rf out/woff2.zip && (cd out && zip -r woff2.zip woff2/)
-rm -rf out/nerd.zip && (cd out && zip -r nerd.zip nerd/)
+rm -rf out/IoZevkaNerd.zip
+(cd out && zip -r IoZevkaNerd.zip IoZevkaNerd)
 
-echo "done."
+log "done. IoZevka is ready."
