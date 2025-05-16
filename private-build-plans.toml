@@ -18,35 +18,10 @@ shape = 600
 menu = 5
 css = "normal"
 
-[buildPlans.IoZevkaCode.widths.UltraCondensed]
-shape = 416
-menu = 1
-css = "ultra-condensed"
-
-[buildPlans.IoZevkaCode.widths.ExtraCondensed]
-shape = 456
-menu = 2
-css = "extra-condensed"
-
-[buildPlans.IoZevkaCode.widths.SemiCondensed]
-shape = 548
-menu = 4
-css = "semi-condensed"
-
-[buildPlans.IoZevkaCode.widths.SemiExtended]
-shape = 658
-menu = 6
-css = "semi-expanded"
-
 [buildPlans.IoZevkaCode.widths.Extended]
 shape = 720
 menu = 7
 css = "expanded"
-
-[buildPlans.IoZevkaCode.weights.ExtraLight]
-shape = 200
-menu = 200
-css = 200
 
 [buildPlans.IoZevkaCode.weights.Light]
 shape = 300
@@ -63,20 +38,10 @@ shape = 500
 menu = 500
 css = 500
 
-[buildPlans.IoZevkaCode.weights.SemiBold]
-shape = 600
-menu = 600
-css = 600
-
 [buildPlans.IoZevkaCode.weights.Bold]
 shape = 700
 menu = 700
 css = 700
-
-[buildPlans.IoZevkaCode.weights.ExtraBold]
-shape = 800
-menu = 800
-css = 800
 
 [buildPlans.IoZevkaQuasi]
 family = "ioZevka Quasi"
@@ -99,20 +64,10 @@ shape = 600
 menu = 5
 css = "normal"
 
-[buildPlans.IoZevkaQuasi.widths.UltraCondensed]
-shape = 416
-menu = 1
-css = "ultra-condensed"
-
 [buildPlans.IoZevkaQuasi.widths.Extended]
 shape = 720
 menu = 7
 css = "expanded"
-
-[buildPlans.IoZevkaQuasi.weights.ExtraLight]
-shape = 200
-menu = 200
-css = 200
 
 [buildPlans.IoZevkaQuasi.weights.Light]
 shape = 300
@@ -129,20 +84,10 @@ shape = 500
 menu = 500
 css = 500
 
-[buildPlans.IoZevkaQuasi.weights.SemiBold]
-shape = 600
-menu = 600
-css = 600
-
 [buildPlans.IoZevkaQuasi.weights.Bold]
 shape = 700
 menu = 700
 css = 700
-
-[buildPlans.IoZevkaQuasi.weights.ExtraBold]
-shape = 800
-menu = 800
-css = 800
 
 [buildPlans.IoZevkaSlabs]
 family = "ioZevka Slabs"
@@ -165,20 +110,10 @@ shape = 600
 menu = 5
 css = "normal"
 
-[buildPlans.IoZevkaSlabs.widths.UltraCondensed]
-shape = 416
-menu = 1
-css = "ultra-condensed"
-
 [buildPlans.IoZevkaSlabs.widths.Extended]
 shape = 720
 menu = 7
 css = "expanded"
-
-[buildPlans.IoZevkaSlabs.weights.ExtraLight]
-shape = 200
-menu = 200
-css = 200
 
 [buildPlans.IoZevkaSlabs.weights.Light]
 shape = 300
@@ -195,20 +130,10 @@ shape = 500
 menu = 500
 css = 500
 
-[buildPlans.IoZevkaSlabs.weights.SemiBold]
-shape = 600
-menu = 600
-css = 600
-
 [buildPlans.IoZevkaSlabs.weights.Bold]
 shape = 700
 menu = 700
 css = 700
-
-[buildPlans.IoZevkaSlabs.weights.ExtraBold]
-shape = 800
-menu = 800
-css = 800
 
 [buildPlans.IoZevkaTerm]
 family = "ioZevka Term"
@@ -233,20 +158,10 @@ shape = 600
 menu = 5
 css = "normal"
 
-[buildPlans.IoZevkaTerm.widths.UltraCondensed]
-shape = 416
-menu = 1
-css = "ultra-condensed"
-
 [buildPlans.IoZevkaTerm.widths.Extended]
 shape = 720
 menu = 7
 css = "expanded"
-
-[buildPlans.IoZevkaTerm.weights.ExtraLight]
-shape = 200
-menu = 200
-css = 200
 
 [buildPlans.IoZevkaTerm.weights.Light]
 shape = 300
@@ -263,20 +178,10 @@ shape = 500
 menu = 500
 css = 500
 
-[buildPlans.IoZevkaTerm.weights.SemiBold]
-shape = 600
-menu = 600
-css = 600
-
 [buildPlans.IoZevkaTerm.weights.Bold]
 shape = 700
 menu = 700
 css = 700
-
-[buildPlans.IoZevkaTerm.weights.ExtraBold]
-shape = 800
-menu = 800
-css = 800
 
 [buildPlans.IoZevkaNerd]
 family = "ioZevka Nerd"
@@ -301,20 +206,10 @@ shape = 600
 menu = 5
 css = "normal"
 
-[buildPlans.IoZevkaNerd.widths.UltraCondensed]
-shape = 416
-menu = 1
-css = "ultra-condensed"
-
 [buildPlans.IoZevkaNerd.widths.Extended]
 shape = 720
 menu = 7
 css = "expanded"
-
-[buildPlans.IoZevkaNerd.weights.ExtraLight]
-shape = 200
-menu = 200
-css = 200
 
 [buildPlans.IoZevkaNerd.weights.Light]
 shape = 300
@@ -331,20 +226,10 @@ shape = 500
 menu = 500
 css = 500
 
-[buildPlans.IoZevkaNerd.weights.SemiBold]
-shape = 600
-menu = 600
-css = 600
-
 [buildPlans.IoZevkaNerd.weights.Bold]
 shape = 700
 menu = 700
 css = 700
-
-[buildPlans.IoZevkaNerd.weights.ExtraBold]
-shape = 800
-menu = 800
-css = 800
 
 [buildPlans.IoZevkaMono]
 family = "ioZevka Mono"
@@ -367,20 +252,10 @@ shape = 600
 menu = 5
 css = "normal"
 
-[buildPlans.IoZevkaMono.widths.UltraCondensed]
-shape = 416
-menu = 1
-css = "ultra-condensed"
-
 [buildPlans.IoZevkaMono.widths.Extended]
 shape = 720
 menu = 7
 css = "expanded"
-
-[buildPlans.IoZevkaMono.weights.ExtraLight]
-shape = 200
-menu = 200
-css = 200
 
 [buildPlans.IoZevkaMono.weights.Light]
 shape = 300
@@ -397,17 +272,7 @@ shape = 500
 menu = 500
 css = 500
 
-[buildPlans.IoZevkaMono.weights.SemiBold]
-shape = 600
-menu = 600
-css = 600
-
 [buildPlans.IoZevkaMono.weights.Bold]
 shape = 700
 menu = 700
 css = 700
-
-[buildPlans.IoZevkaMono.weights.ExtraBold]
-shape = 800
-menu = 800
-css = 800

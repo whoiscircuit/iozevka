@@ -22,17 +22,17 @@
       owner = "be5invis";
       repo = "Iosevka";
       name = "Iosevka";
-      rev = "931ea8d6c688c1d57a425050f762d0151f19d29b";
-      hash = "sha256-GGtbW4Y/02ubdufTXmywGS4jyMfm8RfOMvmUNoUcLQg=";
+      rev = "8c6321868a6cf325db6fbb33492a0ec0e869c8bb";
+      hash = "sha256-8ne5mD94wwJ7rkEFwfTXQOAWA+zoUq+y0hw3fbxZs44=";
     })
     (fetchzip {
       name = "FontPatcher";
-      url = "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FontPatcher.zip";
-      hash = "sha256-3s0vcRiNA/pQrViYMwU2nnkLUNUcqXja/jTWO49x3BU=";
+      url = "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/FontPatcher.zip";
+      hash = "sha256-JR4sxV2yOXtrnIjFBh4as304BjNIcKkBzxOKLxrjo2I=";
       stripRoot = false;
     })
   ];
-  npmDepsHash = "sha256-/zLWtIIPNOMrICKaj5SY1Bo3Pdso6a776fIYY/7X0U4=";
+  npmDepsHash = "sha256-5DcMV9N16pyQxRaK6RCoeghZqAvM5EY1jftceT/bP+o=";
   sourceRoot = "Iosevka";
 
   installPhase = ''
