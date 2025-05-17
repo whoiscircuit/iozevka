@@ -22,8 +22,8 @@
       owner = "be5invis";
       repo = "Iosevka";
       name = "Iosevka";
-      rev = "8c6321868a6cf325db6fbb33492a0ec0e869c8bb";
-      hash = "sha256-8ne5mD94wwJ7rkEFwfTXQOAWA+zoUq+y0hw3fbxZs44=";
+      rev = "fa8f85cb29c1e26a7731b3c819470b5f02893329";
+      hash = "sha256-dhMTcceHru/uLHRY4eWzFV+73ckCBBnDlizP3iY5w5w=";
     })
     (fetchzip {
       name = "FontPatcher";

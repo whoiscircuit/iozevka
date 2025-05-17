@@ -11,8 +11,6 @@ ensure(){
         exit 1
     fi
 }
-ensure git
-ensure wget
 ensure zip
 ensure unzip
 ensure node
@@ -53,6 +51,7 @@ for variation in ${VARIATIONS[@]}; do
     cp ./Iosevka/dist/${variation}/${variation}.css ./out/$variation
     rm -rf out/$variation.zip
     (cd out && zip -r $variation.zip $variation)
+    rm -rf out/$variation
 done
 
 log "building the IoZevkaNerd variation..."
@@ -62,7 +61,7 @@ log "built IoZevkaNerd successfully..."
 log "copying the IoZevkaNerd variation to out directory"
 mkdir -p ./out/IoZevkaNerd.tmp
 mkdir -p ./out/IoZevkaNerd/ttf
-cp ./Iosevka/dist/IoZevkaNerd/TTF/* ./out/nerd.tmp/
+cp ./Iosevka/dist/IoZevkaNerd/TTF/* ./out/IoZevkaNerd.tmp/
 
 # patch nerd fonts for ioZevkaTerm
 log "patching the IoZevkaNerd variation fonts with the nerd font FontPatcher..."
@@ -74,5 +73,6 @@ rm -rf ./out/IoZevkaNerd.tmp
 
 rm -rf out/IoZevkaNerd.zip
 (cd out && zip -r IoZevkaNerd.zip IoZevkaNerd)
+rm -rf out/IoZevkaNerd
 
 log "done. IoZevka is ready."
