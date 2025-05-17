@@ -16,12 +16,12 @@ the flake also provides an overlay with multiple `iozevka-*` packages that you c
 Here’s your Markdown table formatted properly:
 | Font Name     | Features                                       | Use Case                                 | Nix Package        | Download Link |
 |---------------|------------------------------------------------|------------------------------------------|--------------------|---------------|
-| ioZevkaCode   | Monospace + ligatures                          | Code editors                             | `iozevka-code`     | ...           |
-| ioZevkaQuasi  | Sans-serif variable-width                      | UI and display font                      | `iozevka-quasi`    | ...           |
-| ioZevkaSlabs  | Serif variable-width                           | Articles and documentation               | `iozevka-slabs`    | ...           |
-| ioZevkaTerm   | Monospace + fixed spacing + terminal ligatures | Terminal emulators                       | `iozevka-term`     | ...           |
-| ioZevkaNerd   | ioZevkaTerm + nerd icons                       | Terminal emulators                       | `iozevka-nerd`     | ...           |
-| ioZevkaMono   | Monospace + fixed spacing                      | Generic monospace font with no ligatures | `iozevka-mono`     | ...           |
+| ioZevkaCode   | Monospace + ligatures                          | Code editors                             | `iozevka-code`     | [Download](https://github.com/whoiscircuit/iozevka/releases/download/v1.2/IoZevkaCode.zip) |
+| ioZevkaQuasi  | Sans-serif variable-width                      | UI and display font                      | `iozevka-quasi`    | [Download](https://github.com/whoiscircuit/iozevka/releases/download/v1.2/IoZevkaQuasi.zip) |
+| ioZevkaSlabs  | Serif variable-width                           | Articles and documentation               | `iozevka-slabs`    | [Download](https://github.com/whoiscircuit/iozevka/releases/download/v1.2/IoZevkaSlabs.zip) |
+| ioZevkaTerm   | Monospace + fixed spacing + terminal ligatures | Terminal emulators                       | `iozevka-term`     | [Download](https://github.com/whoiscircuit/iozevka/releases/download/v1.2/IoZevkaTerm.zip) |
+| ioZevkaNerd   | ioZevkaTerm + nerd icons                       | Terminal emulators                       | `iozevka-nerd`     | [Download](https://github.com/whoiscircuit/iozevka/releases/download/v1.2/IoZevkaNerd.zip) |
+| ioZevkaMono   | Monospace + fixed spacing                      | Generic monospace font with no ligatures | `iozevka-mono`     | [Download](https://github.com/whoiscircuit/iozevka/releases/download/v1.2/IoZevkaMono.zip) |
 
 
 ### Manual
