@@ -13,7 +13,6 @@ nix build .#iozevka-git
 
 the flake also provides an overlay with multiple `iozevka-*` packages that you can use in your home-manager/nixos configs.
 
-Here’s your Markdown table formatted properly:
 | Font Name     | Features                                       | Use Case                                 | Nix Package        | Download Link |
 |---------------|------------------------------------------------|------------------------------------------|--------------------|---------------|
 | ioZevkaCode   | Monospace + ligatures                          | Code editors                             | `iozevka-code`     | [Download](https://github.com/whoiscircuit/iozevka/releases/download/v1.2/IoZevkaCode.zip) |
